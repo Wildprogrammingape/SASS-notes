@@ -1,0 +1,1 @@
+SASS是css的一个extension，可以写变量，函数，条件语句等，最终编译成css
