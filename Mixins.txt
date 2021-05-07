@@ -1,0 +1,50 @@
+Mixins是可以Inject到任何element中的 sass 代码
+
+语法：
+// 创建maxin
+@mixin banner{
+   ......
+}
+//使用maxin
+.lead-banner{
+  @include banner;
+   ......		这里还可以正常加入css代码
+}
+
+例子:
+
+// Mixins,因为有好几个banner需要styling，提高复用性
+
+@mixin banner{
+  width: 100%;
+  position: relative;
+  color: white;
+  .banner-content{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  span{
+    font-size: $bannerHeading;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  span.title{
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+}
+
+// 使用 Mixin
+.lead-banner{
+  @include banner;
+  text-align: right;
+}
+
+
+
+
