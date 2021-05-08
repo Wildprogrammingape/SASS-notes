@@ -1,0 +1,5 @@
+SASS提供的颜色函数：
+
+background: lighten($deepBlue, 6);   让deepBlue的颜色变亮6倍
+
+color: complement($deepBlue);   底色兼容的颜色
