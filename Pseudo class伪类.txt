@@ -1,0 +1,3 @@
+传统的css用pseudo class添加入hover effect鼠标悬停的功能(:hover)，或在文本后添加内容(:after)
+
+sass用pseudo class,要在前面加&符号，如  &:hover{...}
