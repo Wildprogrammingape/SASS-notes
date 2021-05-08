@@ -1,2 +1,2 @@
 # SASS-notes
-This is my notes when learning Sass/SCSS
+This is my notes when learning SASS/SCSS
