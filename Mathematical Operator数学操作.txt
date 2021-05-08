@@ -1,0 +1,6 @@
+li{
+    // how the li looks like in ul
+    // ul占据大半屏幕的width
+
+    width: (100% / 3);
+}
