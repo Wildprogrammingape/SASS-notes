@@ -1,0 +1,24 @@
+@content可以作为占位符，在函数中作为代码
+
+例子：
+
+添加mixins:
+
+@mixin mediaQuery($argument){
+  @media screen and (max-width: $argument){
+    // @content作为代码的占位符
+    @content;
+  }
+}
+
+
+
+使用在nav bar上：
+
+li{
+    float: left;
+    width: (100% / 6);
+    @include mediaQuery(600px){
+      // 让每个li都能占据100% ul的width
+      width: 100%;
+}
